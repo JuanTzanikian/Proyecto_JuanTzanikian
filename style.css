@@ -24,11 +24,7 @@ padding: 10px;
 text-align: center;
 }
 
-.container2 > * {box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
-    border-radius: 4px;
-    padding: 10px;
-    text-align: center;
-    }
+
 
 .header{grid-area: header;
 
@@ -57,27 +53,23 @@ color: bisque;}
 background-color: darkred;}
 
 .container{display: grid;
+
+  grid-column: 1fr, 1fr,1fr;
+
+  grid-row: repeat(2 1fr);
+
     gap: 10px; 
+
     grid-template-areas: 
 
-"header"
-"navbar"
-"main"
-"sidebar"
-"sidebar_2"
-"footer" ;}
+        "header"
+        "navbar"
+        "main"
+        "sidebar"
+        "sidebar_2"
+        "footer" ;}
 
-.container2{display: grid;
-    gap: 10px;
 
-grid-template-areas:
-
-"header"
-"navbar"
-"main"
-"sidebar"
-"sidebar_2"
-"footer";}
 
 .footer {
     background-color: rgb(0, 0, 0);
@@ -123,27 +115,19 @@ flex-direction: column;}
 
 /* BARRA DE NAVEGACION */
 
-.navbar{display: flex;
-align-items: center;
-justify-content: flex-end;
-padding: 30px 10px;}
+.nav_links{list-style: none;
+background-color: bisque;
+}
 
-
-.nav_links{list-style: none;}
-
-.nav_links li{display: inline-block;
-padding: 0px 20px;}
+.nav_links li{padding: 0px 20px;}
 
 
 .nav_links li a{
-    transition: all 0.3s ease 0s;}
+    transition: all 0.3s ease 0s;color: black; font-size: large;
+  font-family: 'Franklin Gothic Medium';}
 
 
 .nav_links li a:hover{color: deepskyblue;}
-
-a{text-decoration: none;
-color: darkred;
-font-family:fantasy;}
 
 button{padding: 9px 25px;}
 
@@ -156,6 +140,9 @@ justify-content: space-around;}
 .div2{display: flex;
     flex-direction:column;
 flex-wrap: wrap;}
+
+.equipoLegal{margin-bottom: 20px;}
+.equipoAdmin{margin-bottom: 20px;}
 
 /* FOOTER */
 
@@ -248,6 +235,9 @@ justify-content: end;
 margin-top: 10px;
 
 gap: 10px;}
+
+.card_:hover{font-size: x-large;
+transition: all 0s ease-in-out 0.3s;}
 
 
 
